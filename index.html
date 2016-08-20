@@ -1,0 +1,63 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />	
+<title>ЗА ВДВ НАХУЙ</title>
+</head> 
+<style type="text/css"> 
+	body {
+	background: #000000;
+	}
+</style> 
+<body> 
+<embed src="22.swf" width="100%" height="100%"/>
+<script>
+var ttt= parseInt(new Date().getTime()/1000);
+
+window.onbeforeunload = function(env){//
+//
+var lt=parseInt(new Date().getTime()/1000);
+
+    if((lt-ttt)<60*10)
+    {//
+    var message = "ЗА ВДВ НАХУЙ";
+        alert (message);//
+        return message//    
+    }//    
+};    
+window.addEventListener("unload", function(){}, false);
+</script>
+<script type="text/javascript">
+        var kk = 0;
+        var kk_count = 0;
+        var kt = 0;
+        var timer = 1;
+
+        //setTimeout('timer = 1', 0);
+
+        function go() {
+
+            if(timer === 1) {
+                if(kt === 0) {
+                    alert("ЗА ВДВ НАХУЙ");
+                    kt = 1;
+                }
+
+                if(kk_count === 0) {
+                    kk_count = 1;
+                    closesetinterval = setInterval(function () {
+                        if(kk === 0) {
+                            alert("ЗА ВДВ НАХУЙ");
+                        }
+
+                        if(kk === 1) {
+                            setTimeout('kt = 0', 10);
+                            setTimeout('kk_count = 0', 10);
+                            clearInterval(closesetinterval);
+                        }
+                    }, 10);
+                }
+            }
+        }
+</script>
+	
+<body onmouseleave="kk = 0; go();" onmouseenter="kk = 1;">
+<br>
+</body>
